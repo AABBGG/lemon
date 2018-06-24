@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue</title>
+    <script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+    <style>
+        .box{width: 410px; }
+        .box .product{height: 40px;}
+        .box .product .item{width: 100px;float: left;}      
+    </style>
+</head>
+<body>
+    <div id="tab">
+        <div class="box">
+            <div class="product">
+                <div class="item" v-for="(item,index) in arr" v-on:click="tabIndex=index">
+                    {{item}}
+                </div>
+            </div>
+                <div v-for="(item,index) in arr" v-show="tabIndex == index">
+                    {{item}}
+                </div>
+        </div>    
+    </div>
+    <script>
+        var vm = new Vue({
+            el:'#tab',
+            data:{
+                tabIndex:0,             
+                arr:['电脑','平板','手机','鼠标']
+            }
+        })
+    </script>
+</body>
+</html>
