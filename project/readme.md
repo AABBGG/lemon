@@ -5,4 +5,8 @@
         才能运行。
     jdshop->:
         商城项目。
-        
+    bird ->:
+        小鸟科技：http://www.digibird.com.cn/
+    phoenix->:
+        凤凰资讯网
+
