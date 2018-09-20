@@ -140,17 +140,17 @@ $(function(){
 							marginTop: -100
 						}, 890).show()
 				}
-				if($(this).scrollTop() >=2200) { 
+				if($(this).scrollTop() >=5) { 
 						$('.clearfix-1').animate({
 							marginTop: 10
 						}, 900).show()
 				}
-				if($(this).scrollTop() >=2200) { 
+				if($(this).scrollTop() >=5) { 
 						$('.clearfix-2').animate({
 							marginTop: -10
 						}, 1000).show()
 				}
-				if($(this).scrollTop() >=2200) { 
+				if($(this).scrollTop() >=5) { 
 						$('.clearfix-3').animate({
 							marginTop: -10
 						}, 1100).show()
